@@ -4,9 +4,9 @@ import './NewClaim.css'
 const HERO_IMG    = 'https://cs-jinkosolar.com/assets/frontend/images/banner.jpg'
 const SOLAR_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/jinko-1.jfif'
 const INSTALL_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/jinko-2.jpeg'
-const CARD1_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item1-DnYyuNq4.svg'
-const CARD2_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item2-4OFDu8nx.svg'
-const CARD3_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item3-m_Eu5sfO.svg'
+const CARD1_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/jinko-1.jfif'
+const CARD2_IMG   = 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80'
+const CARD3_IMG   = 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80'
 
 export default function NewClaim() {
   return (
