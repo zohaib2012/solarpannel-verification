@@ -1,0 +1,145 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+.admin-page {
+  min-height: 100vh;
+  background: #f0f2f5;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.admin-header {
+  background: #1a5c2a;
+  color: #fff;
+  padding: 18px 40px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.admin-header h1 { font-size: 1.4rem; font-weight: 600; letter-spacing: 1px; flex: 1; }
+
+.logout-btn {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.4);
+  padding: 8px 20px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-left: auto;
+}
+.logout-btn:hover { background: rgba(255,255,255,0.28); }
+.admin-logo { display: flex; align-items: baseline; gap: 2px; }
+.logo-jinko { font-size: 1.5rem; font-weight: 800; color: #fff; letter-spacing: -1px; }
+.logo-solar { font-size: 0.75rem; color: #a5d6a7; font-style: italic; font-weight: 600; }
+
+.admin-body {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Form card */
+.admin-form-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 32px 36px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.admin-form-card h2 { font-size: 1.2rem; font-weight: 700; margin-bottom: 22px; color: #222; }
+
+.form-group { margin-bottom: 18px; }
+.form-group label { display: block; font-size: 0.88rem; font-weight: 600; color: #444; margin-bottom: 6px; }
+.form-group input,
+.form-group select {
+  width: 100%; padding: 11px 14px;
+  border: 1px solid #ddd; border-radius: 6px;
+  font-size: 0.95rem; color: #333; outline: none;
+  transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus { border-color: #1a5c2a; }
+
+.form-actions { display: flex; gap: 12px; margin-top: 8px; }
+
+.btn-add {
+  background: #1a5c2a; color: #fff; border: none;
+  padding: 11px 30px; border-radius: 6px; font-size: 0.95rem;
+  font-weight: 600; cursor: pointer; transition: background 0.2s;
+}
+.btn-add:hover { background: #134520; }
+.btn-add:disabled { background: #aaa; cursor: not-allowed; }
+
+.btn-cancel {
+  background: #f5f5f5; color: #333; border: 1px solid #ccc;
+  padding: 11px 24px; border-radius: 6px; font-size: 0.95rem;
+  cursor: pointer; transition: background 0.2s;
+}
+.btn-cancel:hover { background: #e0e0e0; }
+
+/* Alerts */
+.alert {
+  padding: 12px 16px; border-radius: 6px;
+  margin-bottom: 18px; font-size: 0.9rem; font-weight: 500;
+}
+.alert.success { background: #e8f5e9; color: #2e7d32; border: 1px solid #a5d6a7; }
+.alert.error   { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+
+/* Table card */
+.admin-table-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 28px 36px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+.table-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 20px; flex-wrap: wrap; gap: 12px;
+}
+.table-header h2 { font-size: 1.15rem; font-weight: 700; color: #222; }
+
+.search-input {
+  padding: 10px 14px; border: 1px solid #ddd; border-radius: 6px;
+  font-size: 0.9rem; width: 280px; outline: none;
+}
+.search-input:focus { border-color: #1a5c2a; }
+
+.table-wrap { overflow-x: auto; }
+
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+thead tr { background: #f5f5f5; }
+th {
+  padding: 12px 14px; text-align: left;
+  font-weight: 700; color: #444; border-bottom: 2px solid #e0e0e0;
+}
+td {
+  padding: 12px 14px; color: #333;
+  border-bottom: 1px solid #f0f0f0; vertical-align: middle;
+}
+tr:hover td { background: #fafafa; }
+.editing-row td { background: #fff8e1 !important; }
+.sn-cell { font-family: monospace; font-size: 0.85rem; word-break: break-all; }
+
+.empty-row { text-align: center; color: #999; padding: 40px !important; }
+
+.btn-edit {
+  background: #1565c0; color: #fff; border: none;
+  padding: 6px 14px; border-radius: 4px; font-size: 0.82rem;
+  cursor: pointer; margin-right: 6px; transition: background 0.2s;
+}
+.btn-edit:hover { background: #0d47a1; }
+
+.btn-delete {
+  background: #c62828; color: #fff; border: none;
+  padding: 6px 14px; border-radius: 4px; font-size: 0.82rem;
+  cursor: pointer; transition: background 0.2s;
+}
+.btn-delete:hover { background: #b71c1c; }
+
+@media (max-width: 700px) {
+  .admin-form-card, .admin-table-card { padding: 20px 16px; }
+  .search-input { width: 100%; }
+}

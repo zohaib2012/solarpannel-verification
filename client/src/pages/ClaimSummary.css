@@ -1,0 +1,54 @@
+.btn-primary {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+.btn-primary:hover { background: #0d47a1; }
+
+.verify-steps-section { padding: 60px 80px; }
+
+.steps-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.step { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.step-num {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #222;
+}
+.step p { font-size: 0.9rem; color: #555; }
+
+.cta-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+.cta-section h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; }
+.cta-section p { color: #555; margin-bottom: 24px; font-size: 0.95rem; }
+
+.btn-verify {
+  background: #1a5c2a;
+  color: #fff;
+  border: none;
+  padding: 14px 36px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  text-decoration: underline;
+  transition: background 0.2s;
+}
+.btn-verify:hover { background: #134520; }
+
+@media (max-width: 900px) {
+  .steps-row { grid-template-columns: repeat(2,1fr); }
+  .verify-steps-section { padding: 40px 20px; }
+}

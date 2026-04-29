@@ -1,0 +1,126 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; }
+
+.home-page { background: #f4f4f4; min-height: 100vh; }
+
+/* Hero */
+.hero-banner {
+  position: relative;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: rgba(30, 80, 120, 0.45);
+}
+.hero-content {
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.hero-content h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.hero-line {
+  width: 80px;
+  height: 3px;
+  background: #fff;
+  margin: 10px auto 0;
+}
+
+/* Solutions */
+.solutions-section {
+  padding: 60px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.section-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 40px;
+}
+.section-title-row h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  color: #222;
+}
+.title-dash {
+  flex: 1;
+  max-width: 80px;
+  height: 1px;
+  background: #222;
+}
+
+.solution-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.sol-card {
+  position: relative;
+  height: 340px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.sol-overlay {
+  position: absolute; inset: 0;
+  background: rgba(20, 50, 80, 0.45);
+  transition: background 0.3s;
+}
+.sol-card:hover .sol-overlay {
+  background: rgba(20, 50, 80, 0.6);
+}
+.sol-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding: 30px 20px;
+  text-align: center;
+  color: #fff;
+}
+.sol-content h3 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.sol-content p {
+  font-size: 0.85rem;
+  margin-bottom: 18px;
+  opacity: 0.9;
+}
+.sol-content button {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 9px 24px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.sol-content button:hover {
+  background: #fff;
+  color: #1a5c2a;
+}
+
+@media (max-width: 900px) {
+  .solution-cards { grid-template-columns: 1fr; }
+}
