@@ -10,8 +10,26 @@
   z-index: 100;
 }
 
-.nav-logo { text-decoration: none; display: flex; align-items: center; }
-.nav-logo-img { height: 42px; width: auto; object-fit: contain; }
+.nav-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 3px;
+}
+
+.logo-zen {
+  font-size: 1.9rem;
+  font-weight: 900;
+  color: #1a5c2a;
+  letter-spacing: -1px;
+}
+
+.logo-solar-text {
+  font-size: 0.85rem;
+  color: #4caf50;
+  font-style: italic;
+  font-weight: 700;
+}
 
 .nav-right {
   display: flex;

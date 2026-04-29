@@ -34,7 +34,7 @@ export default function AdminLogin() {
       <div className="login-card">
         {/* Logo */}
         <div className="login-logo">
-          <span className="logo-jinko">JinKO</span>
+          <span className="logo-jinko">Zen</span>
           <span className="logo-solar">Solar</span>
         </div>
 

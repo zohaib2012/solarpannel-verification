@@ -110,7 +110,7 @@ export default function Authenticity() {
               {result.verified ? (
                 <>
                   <p className="result-note">
-                    The product(s) in association with the serial number(s) you inquired about are eligible for JinkoSolar's warranty and after-sales services only within {result.panel.country || 'your region'}. Beyond this area, the warranty and after-sales service will not be available.
+                    The product(s) in association with the serial number(s) you inquired about are eligible for Zen Solar's warranty and after-sales services only within {result.panel.country || 'your region'}. Beyond this area, the warranty and after-sales service will not be available.
                   </p>
                   <div className="result-table">
                     <div className="result-row">
@@ -123,7 +123,7 @@ export default function Authenticity() {
                       <span>Type</span><span>{result.panel.panel_type || '—'}</span>
                     </div>
                     <div className="result-row">
-                      <span>Certification Result</span><span className="cert-ok">Jinko Product</span>
+                      <span>Certification Result</span><span className="cert-ok">Zen Solar Product</span>
                     </div>
                   </div>
                 </>

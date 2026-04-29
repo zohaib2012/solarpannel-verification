@@ -111,7 +111,7 @@ export default function Admin() {
     <div className="admin-page">
       <header className="admin-header">
         <div className="admin-logo">
-          <span className="logo-jinko">JinKO</span><span className="logo-solar">Solar</span>
+          <span className="logo-jinko">Zen</span><span className="logo-solar">Solar</span>
         </div>
         <h1>Admin Panel</h1>
         <button className="logout-btn" onClick={handleLogout}>

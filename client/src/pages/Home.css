@@ -80,16 +80,15 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #2c4a6e;
   filter: brightness(1.12);
 }
 .sol-overlay {
   position: absolute; inset: 0;
-  background: rgba(15, 40, 65, 0.18);
+  background: rgba(255, 255, 255, 0.18);
   transition: background 0.3s;
 }
 .sol-card:hover .sol-overlay {
-  background: rgba(15, 40, 65, 0.35);
+  background: rgba(78, 71, 71, 0.35);
 }
 .sol-content {
   position: relative;
