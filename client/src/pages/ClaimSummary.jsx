@@ -3,11 +3,15 @@ import Navbar from '../components/Navbar'
 import './NewClaim.css'
 import './ClaimSummary.css'
 
-const HERO_IMG  = 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1500&q=80'
-const SOLAR_IMG = 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80'
-const CARD1_IMG = 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&q=80'
-const CARD2_IMG = 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=80'
-const CARD3_IMG = 'https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=600&q=80'
+const HERO_IMG    = 'https://cs-jinkosolar.com/assets/frontend/images/banner.jpg'
+const SOLAR_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/jinko-1.jfif'
+const CARD1_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item1-DnYyuNq4.svg'
+const CARD2_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item2-4OFDu8nx.svg'
+const CARD3_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item3-m_Eu5sfO.svg'
+
+// const SSTALL_IMG = 'https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?w=800&q=80'
+// const CAOLAR_IMG   = 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=800&q=80'
+// const INRD4_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/jinko-2.jpeg'
 
 export default function ClaimSummary() {
   const navigate = useNavigate()
@@ -49,13 +53,16 @@ export default function ClaimSummary() {
           <span className="title-dash" /><h2>WHY ORIGINAL PRODUCTS MATTER</h2><span className="title-dash" />
         </div>
         <div className="img-cards">
-          <div className="img-card" style={{ backgroundImage: `url(${CARD1_IMG})` }}>
+          <div className="img-card">
+            <img src={CARD1_IMG} alt="" className="img-card-bg" />
             <div className="img-card-overlay" /><span>Safety Guaranteed</span>
           </div>
-          <div className="img-card" style={{ backgroundImage: `url(${CARD2_IMG})` }}>
+          <div className="img-card">
+            <img src={CARD2_IMG} alt="" className="img-card-bg" />
             <div className="img-card-overlay" /><span>Valid Warranty</span>
           </div>
-          <div className="img-card" style={{ backgroundImage: `url(${CARD3_IMG})` }}>
+          <div className="img-card">
+            <img src={CARD3_IMG} alt="" className="img-card-bg" />
             <div className="img-card-overlay" /><span>Maximum Efficiency</span>
           </div>
         </div>

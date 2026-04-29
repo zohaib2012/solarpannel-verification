@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 import './Authenticity.css'
 import API_BASE from '../utils/api'
 
-const HERO_IMG    = 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1500&q=80'
+const HERO_IMG    = 'https://cs-jinkosolar.com/assets/frontend/images/authenticity-banner.svg'
 const BARCODE_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/solar-verification.jpg'
 
 const COUNTRIES = [
@@ -129,7 +129,7 @@ export default function Authenticity() {
                 </>
               ) : (
                 <p className="result-note unverified-note">
-                  This serial number was not found in our database. This product may be counterfeit or the serial number may be incorrect.
+                  This serial number was not found in our record. This product may be counterfeit or the serial number may be incorrect.
                 </p>
               )}
 

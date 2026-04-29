@@ -6,33 +6,36 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 /* Hero */
 .hero-banner {
   position: relative;
-  height: 280px;
+  height: 300px;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: rgba(30, 80, 120, 0.45);
+  background: rgba(10, 40, 70, 0.62);
 }
 .hero-content {
   position: relative;
   text-align: center;
   color: #fff;
+  z-index: 1;
 }
 .hero-content h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 3px;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: 4px;
   text-transform: uppercase;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.7);
 }
 .hero-line {
-  width: 80px;
+  width: 90px;
   height: 3px;
   background: #fff;
-  margin: 10px auto 0;
+  margin: 12px auto 0;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
 }
 
 /* Solutions */
@@ -53,6 +56,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
   font-weight: 700;
   letter-spacing: 3px;
   color: #222;
+  white-space: nowrap;
 }
 .title-dash {
   flex: 1;
@@ -70,19 +74,27 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 .sol-card {
   position: relative;
   height: 340px;
-  background-size: cover;
-  background-position: center;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
+  background: #1a3a5c;
+}
+
+.sol-bg-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .sol-overlay {
   position: absolute; inset: 0;
-  background: rgba(20, 50, 80, 0.45);
+  background: rgba(15, 40, 65, 0.5);
   transition: background 0.3s;
 }
 .sol-card:hover .sol-overlay {
-  background: rgba(20, 50, 80, 0.6);
+  background: rgba(15, 40, 65, 0.68);
 }
 .sol-content {
   position: relative;
@@ -99,11 +111,12 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 10px;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.5);
 }
 .sol-content p {
   font-size: 0.85rem;
   margin-bottom: 18px;
-  opacity: 0.9;
+  opacity: 0.92;
 }
 .sol-content button {
   background: transparent;
@@ -123,4 +136,5 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 
 @media (max-width: 900px) {
   .solution-cards { grid-template-columns: 1fr; }
+  .solutions-section { padding: 40px 16px; }
 }

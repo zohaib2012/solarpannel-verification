@@ -2,10 +2,10 @@ import { useNavigate } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import './Home.css'
 
-const HERO_IMG = 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1500&q=80'
-const CARD1_IMG = 'https://images.unsplash.com/photo-1563770660941-20978e870e26?w=600&q=80'
-const CARD2_IMG = 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=600&q=80'
-const CARD3_IMG = 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=600&q=80'
+const HERO_IMG  = 'https://cs-jinkosolar.com/assets/frontend/images/banner.jpg'
+const CARD1_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/item1-DnYyuNq4.svg'
+const CARD2_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/item2-4OFDu8nx.svg'
+const CARD3_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/item3-m_Eu5sfO.svg'
 
 export default function Home() {
   const navigate = useNavigate()
@@ -32,7 +32,8 @@ export default function Home() {
         </div>
 
         <div className="solution-cards">
-          <div className="sol-card" style={{ backgroundImage: `url(${CARD1_IMG})` }}>
+          <div className="sol-card">
+            <img src={CARD1_IMG} alt="" className="sol-bg-img" />
             <div className="sol-overlay" />
             <div className="sol-content">
               <h3>New Claim</h3>
@@ -41,7 +42,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="sol-card" style={{ backgroundImage: `url(${CARD2_IMG})` }}>
+          <div className="sol-card">
+            <img src={CARD2_IMG} alt="" className="sol-bg-img" />
             <div className="sol-overlay" />
             <div className="sol-content">
               <h3>Claim Summary</h3>
@@ -50,7 +52,8 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="sol-card" style={{ backgroundImage: `url(${CARD3_IMG})` }}>
+          <div className="sol-card">
+            <img src={CARD3_IMG} alt="" className="sol-bg-img" />
             <div className="sol-overlay" />
             <div className="sol-content">
               <h3>SN Authentication</h3>

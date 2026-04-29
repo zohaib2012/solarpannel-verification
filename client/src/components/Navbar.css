@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 40px;
+  padding: 10px 40px;
   background: #fff;
   box-shadow: 0 1px 4px rgba(0,0,0,0.08);
   position: sticky;
@@ -10,26 +10,8 @@
   z-index: 100;
 }
 
-.nav-logo {
-  text-decoration: none;
-  display: flex;
-  align-items: baseline;
-  gap: 2px;
-}
-
-.logo-jinko {
-  font-size: 1.7rem;
-  font-weight: 800;
-  color: #1a5c2a;
-  letter-spacing: -1px;
-}
-
-.logo-solar {
-  font-size: 0.85rem;
-  color: #4caf50;
-  font-style: italic;
-  font-weight: 600;
-}
+.nav-logo { text-decoration: none; display: flex; align-items: center; }
+.nav-logo-img { height: 42px; width: auto; object-fit: contain; }
 
 .nav-right {
   display: flex;
@@ -39,3 +21,7 @@
   color: #333;
   cursor: pointer;
 }
+
+.globe-icon { font-size: 1rem; }
+.lang { font-weight: 500; }
+.lang-arrow { font-size: 0.7rem; }
