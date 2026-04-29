@@ -32,8 +32,7 @@ export default function Home() {
         </div>
 
         <div className="solution-cards">
-          <div className="sol-card">
-            <img src={CARD1_IMG} alt="" className="sol-bg-img" />
+          <div className="sol-card" style={{ backgroundImage: `url(${CARD1_IMG})` }}>
             <div className="sol-overlay" />
             <div className="sol-content">
               <h3>New Claim</h3>
@@ -42,8 +41,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="sol-card">
-            <img src={CARD2_IMG} alt="" className="sol-bg-img" />
+          <div className="sol-card" style={{ backgroundImage: `url(${CARD2_IMG})` }}>
             <div className="sol-overlay" />
             <div className="sol-content">
               <h3>Claim Summary</h3>
@@ -52,8 +50,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="sol-card">
-            <img src={CARD3_IMG} alt="" className="sol-bg-img" />
+          <div className="sol-card" style={{ backgroundImage: `url(${CARD3_IMG})` }}>
             <div className="sol-overlay" />
             <div className="sol-content">
               <h3>SN Authentication</h3>

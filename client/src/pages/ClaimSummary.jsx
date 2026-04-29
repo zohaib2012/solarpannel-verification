@@ -53,16 +53,13 @@ export default function ClaimSummary() {
           <span className="title-dash" /><h2>WHY ORIGINAL PRODUCTS MATTER</h2><span className="title-dash" />
         </div>
         <div className="img-cards">
-          <div className="img-card">
-            <img src={CARD1_IMG} alt="" className="img-card-bg" />
+          <div className="img-card" style={{ backgroundImage: `url(${CARD1_IMG})` }}>
             <div className="img-card-overlay" /><span>Safety Guaranteed</span>
           </div>
-          <div className="img-card">
-            <img src={CARD2_IMG} alt="" className="img-card-bg" />
+          <div className="img-card" style={{ backgroundImage: `url(${CARD2_IMG})` }}>
             <div className="img-card-overlay" /><span>Valid Warranty</span>
           </div>
-          <div className="img-card">
-            <img src={CARD3_IMG} alt="" className="img-card-bg" />
+          <div className="img-card" style={{ backgroundImage: `url(${CARD3_IMG})` }}>
             <div className="img-card-overlay" /><span>Maximum Efficiency</span>
           </div>
         </div>

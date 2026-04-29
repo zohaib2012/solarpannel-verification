@@ -45,16 +45,13 @@ export default function NewClaim() {
           <span className="title-dash" /><h2>BENEFITS OF SOLAR PANELS</h2><span className="title-dash" />
         </div>
         <div className="img-cards">
-          <div className="img-card">
-            <img src={CARD1_IMG} alt="" className="img-card-bg" />
+          <div className="img-card" style={{ backgroundImage: `url(${CARD1_IMG})` }}>
             <div className="img-card-overlay" /><span>Lower Electricity Bills</span>
           </div>
-          <div className="img-card">
-            <img src={CARD2_IMG} alt="" className="img-card-bg" />
+          <div className="img-card" style={{ backgroundImage: `url(${CARD2_IMG})` }}>
             <div className="img-card-overlay" /><span>Eco-Friendly Energy</span>
           </div>
-          <div className="img-card">
-            <img src={CARD3_IMG} alt="" className="img-card-bg" />
+          <div className="img-card" style={{ backgroundImage: `url(${CARD3_IMG})` }}>
             <div className="img-card-overlay" /><span>Energy Independence</span>
           </div>
         </div>
