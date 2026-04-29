@@ -2,6 +2,7 @@ import { useState } from 'react'
 import axios from 'axios'
 import Navbar from '../components/Navbar'
 import './Authenticity.css'
+import API_BASE from '../utils/api'
 
 const HERO_IMG    = 'https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1500&q=80'
 const BARCODE_IMG = 'https://cs-jinkosolar.com/assets/frontend/images/solar-verification.jpg'
@@ -37,7 +38,7 @@ export default function Authenticity() {
 
     try {
       setLoading(true)
-      const { data } = await axios.post('/api/verify', { serial_number: sn })
+      const { data } = await axios.post(`${API_BASE}/api/verify`, { serial_number: sn })
       setResult(data)
     } catch {
       setError('Server error. Please try again.')

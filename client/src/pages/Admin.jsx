@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import './Admin.css'
+import API_BASE from '../utils/api'
 
-const API = '/api/panels'
+const API = `${API_BASE}/api/panels`
 
 const COUNTRIES = [
   'Pakistan', 'India', 'Bangladesh', 'UAE', 'Saudi Arabia',
