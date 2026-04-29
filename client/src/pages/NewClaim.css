@@ -6,7 +6,7 @@
   background-size: cover; background-position: center top;
   display: flex; align-items: center; justify-content: center;
 }
-.hero-overlay { position: absolute; inset: 0; background: rgba(10,40,70,0.62); }
+.hero-overlay { position: absolute; inset: 0; background: rgba(10,40,70,0.48); }
 .hero-content { position: relative; text-align: center; color: #fff; z-index: 1; }
 .hero-content h1 {
   font-size: 2.2rem; font-weight: 800; letter-spacing: 3px;
@@ -52,7 +52,7 @@
   width: 100%; height: 100%;
   object-fit: cover; object-position: center;
 }
-.img-card-overlay { position: absolute; inset: 0; background: rgba(15,40,65,0.5); }
+.img-card-overlay { position: absolute; inset: 0; background: rgba(15,40,65,0.25); }
 .img-card span {
   position: relative; color: #fff; font-size: 1.1rem; font-weight: 600;
   text-align: center; padding: 0 10px; text-shadow: 0 1px 6px rgba(0,0,0,0.5);

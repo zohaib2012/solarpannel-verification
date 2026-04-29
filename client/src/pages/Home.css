@@ -15,7 +15,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 }
 .hero-overlay {
   position: absolute; inset: 0;
-  background: rgba(10, 40, 70, 0.62);
+  background: rgba(10, 40, 70, 0.48);
 }
 .hero-content {
   position: relative;
@@ -90,11 +90,11 @@ body { font-family: 'Segoe UI', Arial, sans-serif; }
 }
 .sol-overlay {
   position: absolute; inset: 0;
-  background: rgba(15, 40, 65, 0.5);
+  background: rgba(15, 40, 65, 0.28);
   transition: background 0.3s;
 }
 .sol-card:hover .sol-overlay {
-  background: rgba(15, 40, 65, 0.68);
+  background: rgba(15, 40, 65, 0.45);
 }
 .sol-content {
   position: relative;
