@@ -1,4 +1,5 @@
 import Navbar from '../components/Navbar'
+import { useLang } from '../context/LanguageContext'
 import './NewClaim.css'
 
 const HERO_IMG    = 'https://cs-jinkosolar.com/assets/frontend/images/banner.jpg'
@@ -9,6 +10,8 @@ const CARD2_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item2-4OFD
 const CARD3_IMG   = 'https://cs-jinkosolar.com/assets/frontend/images/item3-m_Eu5sfO.svg'
 
 export default function NewClaim() {
+  const { t } = useLang()
+
   return (
     <div className="page">
       <Navbar />
@@ -17,7 +20,7 @@ export default function NewClaim() {
       <div className="hero-banner" style={{ backgroundImage: `url(${HERO_IMG})` }}>
         <div className="hero-overlay" />
         <div className="hero-content">
-          <h1>New Claim</h1>
+          <h1>{t('nc_hero')}</h1>
           <div className="hero-line" />
         </div>
       </div>
@@ -25,13 +28,13 @@ export default function NewClaim() {
       {/* Why Solar Energy */}
       <section className="two-col-section white-bg">
         <div className="section-title-row">
-          <span className="title-dash" /><h2>WHY SOLAR ENERGY?</h2><span className="title-dash" />
+          <span className="title-dash" /><h2>{t('nc_why_solar')}</h2><span className="title-dash" />
         </div>
         <div className="two-col">
           <div className="col-text">
-            <h3>Power Your Future With Solar</h3>
-            <p>Solar energy is one of the most reliable and sustainable power sources available today. By converting sunlight into electricity, solar panels provide clean, renewable energy for homes and businesses.</p>
-            <p>Switching to solar helps reduce electricity bills, protects the environment, and increases property value. It is a long-term investment that delivers energy independence and cost savings.</p>
+            <h3>{t('nc_power_future')}</h3>
+            <p>{t('nc_solar_p1')}</p>
+            <p>{t('nc_solar_p2')}</p>
           </div>
           <div className="col-img">
             <img src={SOLAR_IMG} alt="Solar panels" />
@@ -42,17 +45,17 @@ export default function NewClaim() {
       {/* Benefits */}
       <section className="cards-section grey-bg">
         <div className="section-title-row">
-          <span className="title-dash" /><h2>BENEFITS OF SOLAR PANELS</h2><span className="title-dash" />
+          <span className="title-dash" /><h2>{t('nc_benefits')}</h2><span className="title-dash" />
         </div>
         <div className="img-cards">
           <div className="img-card" style={{ backgroundImage: `url(${CARD1_IMG})` }}>
-            <div className="img-card-overlay" /><span>Lower Electricity Bills</span>
+            <div className="img-card-overlay" /><span>{t('nc_lower_bills')}</span>
           </div>
           <div className="img-card" style={{ backgroundImage: `url(${CARD2_IMG})` }}>
-            <div className="img-card-overlay" /><span>Eco-Friendly Energy</span>
+            <div className="img-card-overlay" /><span>{t('nc_eco_energy')}</span>
           </div>
           <div className="img-card" style={{ backgroundImage: `url(${CARD3_IMG})` }}>
-            <div className="img-card-overlay" /><span>Energy Independence</span>
+            <div className="img-card-overlay" /><span>{t('nc_energy_indep')}</span>
           </div>
         </div>
       </section>
@@ -60,20 +63,20 @@ export default function NewClaim() {
       {/* Green Energy Advantages */}
       <section className="two-col-section white-bg">
         <div className="section-title-row">
-          <span className="title-dash" /><h2>GREEN ENERGY ADVANTAGES</h2><span className="title-dash" />
+          <span className="title-dash" /><h2>{t('nc_green_adv')}</h2><span className="title-dash" />
         </div>
         <div className="two-col">
           <div className="col-img">
             <img src={INSTALL_IMG} alt="Solar installation" />
           </div>
           <div className="col-text">
-            <h3>Clean &amp; Sustainable Living</h3>
+            <h3>{t('nc_clean_living')}</h3>
             <ul>
-              <li>Renewable &amp; unlimited energy source</li>
-              <li>Low maintenance and long lifespan</li>
-              <li>Increases property resale value</li>
-              <li>Government incentives &amp; tax benefits</li>
-              <li>Reliable power during outages (with batteries)</li>
+              <li>{t('nc_li1')}</li>
+              <li>{t('nc_li2')}</li>
+              <li>{t('nc_li3')}</li>
+              <li>{t('nc_li4')}</li>
+              <li>{t('nc_li5')}</li>
             </ul>
           </div>
         </div>
